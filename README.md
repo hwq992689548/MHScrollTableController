@@ -18,6 +18,7 @@
  一、ViewController.swfit中，用一个大的tableView，分两组，第2组cell2是装载可以左右滑动的vc (用collectionView来装载vc的view实现左右滑动)
     
     extension ViewController: UIScrollViewDelegate {
+    
       func scrollViewDidScroll(_ scrollView: UIScrollView) {
             let bottomVC_offsetY = self.tableView.rect(forSection: 1).origin.y
             if scrollView.contentOffset.y >= bottomVC_offsetY {
@@ -35,7 +36,8 @@
                 }
             }
         }
-
+   }
+   
 ###
  二 、 MHBottomViewController是底部控制器, 里面有 可以上下滑动的tableView
 
