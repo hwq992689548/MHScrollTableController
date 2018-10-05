@@ -1,6 +1,7 @@
 # MHScrollTableController
 
-##主要的设置 scrollview（tableView）同时识别多个手势
+###
+ 主要的设置 scrollview（tableView）同时识别多个手势
 // MARK: -  同时识别多个手势
     extension MHBaseTableView: UIGestureRecognizerDelegate {
         func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
@@ -9,11 +10,11 @@
     }
 
 
-
+###
 用通知的形势来区分什么时候哪个tableview滑动，哪个不能滑动
 直接上代码
 
-##一、ViewController.swfit中，用一个大的tableView，分两组，第2组cell2是装载可以左右滑动的vc (用collectionView来装载vc的view实现左右滑动)
+ 一、ViewController.swfit中，用一个大的tableView，分两组，第2组cell2是装载可以左右滑动的vc (用collectionView来装载vc的view实现左右滑动)
     extension ViewController: UIScrollViewDelegate {
       func scrollViewDidScroll(_ scrollView: UIScrollView) {
             let bottomVC_offsetY = self.tableView.rect(forSection: 1).origin.y
@@ -33,8 +34,8 @@
             }
         }
 
-
-##二 、 MHBottomViewController是底部控制器, 里面有 可以上下滑动的tableView
+###
+ 二 、 MHBottomViewController是底部控制器, 里面有 可以上下滑动的tableView
 extension MHBottomViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         print("接触屏幕")
