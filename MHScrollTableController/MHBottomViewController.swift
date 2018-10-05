@@ -64,13 +64,14 @@ extension MHBottomViewController: UITableViewDataSource {
 extension MHBottomViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         print("接触屏幕")
-        self.fingerIsTouch = true
     }
+    
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        self.fingerIsTouch = false
+        print("松开屏幕")
     }
     
+    //滑动时调用
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if self.vcCanScroll == false  {
             scrollView.contentOffset = CGPoint.zero
@@ -79,6 +80,7 @@ extension MHBottomViewController: UIScrollViewDelegate {
         if scrollView.contentOffset.y <= 0 {
             self.vcCanScroll = false
             scrollView.contentOffset = CGPoint.zero
+            //往下滑动 bannerView即将出现时发送通知 
             NotificationCenter.default.post(name: NSNotification.Name.init("leaveTop"), object: nil)
         }
     }
