@@ -1,5 +1,9 @@
 # MHScrollTableController
 
+![效果1](https://github.com/hwq992689548/MHScrollTableController/blob/master/screenShot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-10-05%20at%2016.51.23.png?raw=true)
+![效果2](https://github.com/hwq992689548/MHScrollTableController/blob/master/screenShot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-10-05%20at%2016.51.25.png?raw=true)
+![效果3](https://github.com/hwq992689548/MHScrollTableController/blob/master/screenShot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-10-05%20at%2016.51.35.png?raw=true)
+
 ###
  主要的设置 scrollview（tableView）同时识别多个手势
 // MARK: -  同时识别多个手势
