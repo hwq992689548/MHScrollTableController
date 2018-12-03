@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         
         self.tableView = MHBaseTableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreen_width, height: kScreen_height), style: UITableViewStyle.plain)
-        self.tableView.estimatedRowHeight = 0.01
+//         self.tableView.estimatedRowHeight = 0.01
         self.tableView.register(UITableViewCell.self , forCellReuseIdentifier: "cell1")
         self.tableView.register(MHBottomTableViewCell.self , forCellReuseIdentifier: "cell2")
 
